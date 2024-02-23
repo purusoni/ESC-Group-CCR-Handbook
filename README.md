@@ -1,4 +1,4 @@
-# ESC Group CCR Handbook
+# ESC Group CCR Handbook (In Progress)
 
 "Also, since you are the first student to use CCR in our lab, please develop a 'handbook' for using CCR. In this handbook, you can overview the resources in CCR and how to make a quick start. Then, you can structure an outline Q&A section and list the common questions and troubleshooting solutions." 
 
