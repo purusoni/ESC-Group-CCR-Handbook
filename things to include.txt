@@ -1,0 +1,51 @@
+- what is coldfront
+- ssh key gen
+- ssh login
+- ccr can only be acceess from on cmapus wifi
+- intro to CCR video: https://youtu.be/ryBqdeqTO4o
+- 3 types of clusters
+-  ssh purusoni@vortex.ccr.buffalo.edu -o "ServerAliveInterval 60"
+- https://docs.ccr.buffalo.edu/en/latest/hpc/login/
+- partitions
+- types of jobs
+
+--ondemand
+
+-- snodes
+-- squeue -u <username>
+-- scancel <jobid>
+-- scancel -u <username> 
+
+
+- slurm guide
+-- batch jobs
+--- args
+-- interative jobs
+--- args
+--- srun
+
+-- scavanger partition
+- a100
+
+
+-- file transfer
+- large files: Globus
+- small files: ondemand
+-- path structure: /projects/...
+
+
+-- storage
+- 10 per user
+- 1TB wenyaoxu
+
+
+-- software
+- easybuild management sucks
+- remember no root
+- https://join.slack.com/t/ubccr-help/shared_invite/zt-2dzghw2yb-owfm7e_urSIOPyEcFFiUsw
+- 
+
+
+
+
+
