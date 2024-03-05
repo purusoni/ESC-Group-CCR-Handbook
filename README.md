@@ -1,6 +1,9 @@
 # ESC Group CCR Handbook (In Progress)
+*If you want to contributing to the handbook please start a pull request*
 
+---
 ***Adopted from https://docs.ccr.buffalo.edu/en/latest/***
+
 
 In this handbook, I will provide an overview of the resources in CCR and how to make a quick start. Then, I will structure an outline Q&A section and list the common questions and troubleshooting solutions.
 
@@ -24,6 +27,8 @@ HPC has several partitions, each of which offer certain kinds of nodes (actual h
 - **general-compute**: Main partition; We'll use this most of the time; queue wait time depends on the resources requested and current CCR allocations; jobs are run for the entire duration requested. general-compute partition contains compute nodes on which we'll run our jobs (programs).
 
 - **scavenger**: Scavenge idle GPUs; your job would be cancelled as soon as the GPU owner starts his or her job; quick access to powerful GPUs if your job can be regularly checkpointed (I use this with Weights & Biases Logging). scavenger partition contains compute nodes on which we'll run our jobs (programs).
+
+[More Details on Currently Available Hardware](Nodes.md)
 
 ### Project Storage
 
@@ -56,3 +61,25 @@ For a brief overview for CCR you may watch https://www.youtube.com/watch?v=ryBqd
 5. CCR uses *Slurm* job scheduler. You have two options to access the compute nodes. 
     1. **Batch Jobs**: Write a *Slurm* script file detailing the hardware configuration, software modules to load, and how and what programs to run. It it fully automated and you don't have direct ssh access to the compute nodes. Once the job is running you can't change anything. [Details Here](Batch-Jobs.md)
     2. **Interactive Jobs**: Request a specific hardware and then access it directly from terminal. Useful for faster iteration, and when you are not sure what the specific steps are. [Details Here](Interactive-Jobs.md)
+
+
+## OnDemand Portal
+"Open OnDemand is a browser based single point of access for all of CCR's clusters, shared storage, and remote visualization servers. OnDemand provides a graphical interface to view, edit, download, and upload files, manage and create job templates for CCR's clusters, and access interactive applications such as remote desktops to cluster nodes and the visualization servers, as well as GUI-based software like Matlab, Jupyter Lab/Notebook, and vscode. All of this is done through the browser on almost any device, requires no additional software to be installed, and with minimal knowledge of Linux and job scheduler commands." (CCR website, 2024)
+
+*TLDR: It a website that provide a GUI for some of CCR's features. Useful if you prefer a GUI over the command line, although not all functionality of the command line is included and most of the included ones don't work properly. One the main advantages, what I use it for, is the you can monitor the harware resource utilization (similar to task manager in windows)*
+
+***PS: I  would not recommend starting any sort of Job or requesting resources using OnDemand as I've ran into multiple issues and using the command line is much easier.***
+
+OnDemand can be accessed at https://ondemand.ccr.buffalo.edu/
+
+Fig: Screenshots of the Job Page of the OnDemand Portal.
+![OnDemand Resource Monitor](images/OnDemand.png)
+![OnDemand Detailed Resource Monitor](images/OnDemandDetailed.png)
+
+
+## File Transfer
+
+If you need to transfer files to and from CCR, there are two options.
+
+1. Small Files: Use 
+

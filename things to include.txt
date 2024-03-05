@@ -9,7 +9,7 @@ $- https://docs.ccr.buffalo.edu/en/latest/hpc/login/
 $- partitions
 $- types of jobs
 
---ondemand
+$--ondemand
 
 -- snodes
 -- squeue -u <username>
@@ -34,9 +34,9 @@ $- types of jobs
 -- path structure: /projects/...
 
 
--- storage
-- 10 per user
-- 1TB wenyaoxu
+$-- storage
+$- 10 per user
+$- 1TB wenyaoxu
 
 
 -- software
