@@ -1,6 +1,6 @@
 - what is coldfront
-- ssh key gen
-- ssh login
+$- ssh key gen 
+$- ssh login
 - ccr can only be acceess from on cmapus wifi
 - intro to CCR video: https://youtu.be/ryBqdeqTO4o
 - 3 types of clusters

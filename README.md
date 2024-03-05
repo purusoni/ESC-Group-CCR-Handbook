@@ -17,19 +17,19 @@ CCR offers a variety of resources, but only HPC Clusters and Project Storage are
 
 HPC stands for High Performance Computing and UB CCR provides bulk access to high performance CPUs and GPUs.
 
-HPC has several partitions, out of which the most important ones are:
+HPC has several partitions, each of which offer certain kinds of nodes (actual hardware), out of which the most important ones are:
 
-- **debug**: for debugging; virtually no queue wait time (Does not have GPUs)
+- **debug**: for debugging; virtually no queue wait time (Does not have GPUs). Debug partition contains debug nodes.
 
-- **general-compute**: Main partition; We'll use this most of the times; queue wait time depends on the resources requested and current CCR allocations.
+- **general-compute**: Main partition; We'll use this most of the time; queue wait time depends on the resources requested and current CCR allocations; jobs are run for the entire duration requested. general-compute partition contain, among others, compute nodes on which we'll run our jobs (programs).
 
-- **scavenger**: Scavenge idle GPUs; your job would be cancelled as soon as the GPU owner starts his or her job; quick access to powerful GPUs if your job can be regularly checkpointed. (I use this with Weights & Biases Logging)
+- **scavenger**: Scavenge idle GPUs; your job would be cancelled as soon as the GPU owner starts his or her job; quick access to powerful GPUs if your job can be regularly checkpointed (I use this with Weights & Biases Logging). scavenger partition contain, among others, compute nodes on which we'll run our jobs (programs).
 
 ### Project Storage
 
 CCR provides storage for faculty groups. All members of the group have access to it. We currently have 1TB group storage at `/projects/academic/wenyaoxu/`. 
 
-Additinaly, CCR provides 10GB personal storage to each user. located at `/user/<username>/`. 
+Additinaly, CCR provides 10GB personal storage to each user. located at `/user/<username>/`.
 
 
 ## QuickStart
@@ -39,4 +39,18 @@ For a brief overview for CCR you may watch https://www.youtube.com/watch?v=ryBqd
 1. Create an CCR account at https://idm.ccr.buffalo.edu/signup
 2. Share your CCR account with faculty so that your account can be granted access.
 3. Set up SSH keys by following the guide at https://docs.ccr.buffalo.edu/en/latest/hpc/login/
-4. 
+4. Open a Terminal on your local machine and ssh into the login/frontend node (default) 
+    ``` 
+    ssh <username>@vortex.ccr.buffalo.edu -o "ServerAliveInterval 60"
+    ```
+
+    `-o "ServerAliveInterval 60"` flag is optional, but recommended, and meant to stop the ssh connection from timing out.
+
+    it should look something like this: ![Terminal SSH Screenshot](images/Terminal%20SSH%20Screenshot.png)
+
+    **IMPORTANT!** Do NOT run heavy computation on the login/frontend nodes. They are meant for editing scripts, moving files, small data transfers, submitting jobs.
+
+    ![HPC Architecture](https://www.marquette.edu/high-performance-computing/images/architecture.png)
+
+5. CCR uses *Slurm* job scheduler. You have two options to access the compute nodes. 
+    1. Submit batch jobs: Write a *Slurm* script file detailing the hardware configuration, software modules to load, and 
