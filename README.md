@@ -19,18 +19,19 @@ HPC stands for High Performance Computing and UB CCR provides bulk access to hig
 
 HPC has several partitions, each of which offer certain kinds of nodes (actual hardware), out of which the most important ones are:
 
-- **debug**: for debugging; virtually no queue wait time (Does not have GPUs). Debug partition contains debug nodes.
+- **debug**: for debugging; virtually no queue wait time; max 1 hour job time limit. Debug partition contains debug nodes.
 
-- **general-compute**: Main partition; We'll use this most of the time; queue wait time depends on the resources requested and current CCR allocations; jobs are run for the entire duration requested. general-compute partition contain, among others, compute nodes on which we'll run our jobs (programs).
+- **general-compute**: Main partition; We'll use this most of the time; queue wait time depends on the resources requested and current CCR allocations; jobs are run for the entire duration requested. general-compute partition contains compute nodes on which we'll run our jobs (programs).
 
-- **scavenger**: Scavenge idle GPUs; your job would be cancelled as soon as the GPU owner starts his or her job; quick access to powerful GPUs if your job can be regularly checkpointed (I use this with Weights & Biases Logging). scavenger partition contain, among others, compute nodes on which we'll run our jobs (programs).
+- **scavenger**: Scavenge idle GPUs; your job would be cancelled as soon as the GPU owner starts his or her job; quick access to powerful GPUs if your job can be regularly checkpointed (I use this with Weights & Biases Logging). scavenger partition contains compute nodes on which we'll run our jobs (programs).
 
 ### Project Storage
 
 CCR provides storage for faculty groups. All members of the group have access to it. We currently have 1TB group storage at `/projects/academic/wenyaoxu/`. 
 
-Additinaly, CCR provides 10GB personal storage to each user. located at `/user/<username>/`.
+Additinaly, CCR provides 10GB personal storage to each user, located at `/user/<username>/`.
 
+If you need more storage please contact Wenyao.
 
 ## QuickStart
 
@@ -53,4 +54,5 @@ For a brief overview for CCR you may watch https://www.youtube.com/watch?v=ryBqd
     ![HPC Architecture](https://www.marquette.edu/high-performance-computing/images/architecture.png)
 
 5. CCR uses *Slurm* job scheduler. You have two options to access the compute nodes. 
-    1. Submit batch jobs: Write a *Slurm* script file detailing the hardware configuration, software modules to load, and 
+    1. **Batch Jobs**: Write a *Slurm* script file detailing the hardware configuration, software modules to load, and how and what programs to run. It it fully automated and you don't have direct ssh access to the compute nodes. Once the job is running you can't change anything. [Details Here](Batch-Jobs.md)
+    2. **Interactive Jobs**: Request a specific hardware and then access it directly from terminal. Useful for faster iteration, and when you are not sure what the specific steps are. [Details Here](Interactive-Jobs.md)

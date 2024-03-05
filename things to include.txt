@@ -1,13 +1,13 @@
 - what is coldfront
 $- ssh key gen 
 $- ssh login
-- ccr can only be acceess from on cmapus wifi
-- intro to CCR video: https://youtu.be/ryBqdeqTO4o
-- 3 types of clusters
--  ssh purusoni@vortex.ccr.buffalo.edu -o "ServerAliveInterval 60"
-- https://docs.ccr.buffalo.edu/en/latest/hpc/login/
-- partitions
-- types of jobs
+$- ccr can only be acceess from on cmapus wifi
+$- intro to CCR video: https://youtu.be/ryBqdeqTO4o
+$- 3 types of clusters
+$-  ssh purusoni@vortex.ccr.buffalo.edu -o "ServerAliveInterval 60"
+$- https://docs.ccr.buffalo.edu/en/latest/hpc/login/
+$- partitions
+$- types of jobs
 
 --ondemand
 
