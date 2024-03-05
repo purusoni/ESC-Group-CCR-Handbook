@@ -81,5 +81,8 @@ Fig: Screenshots of the Job Page of the OnDemand Portal.
 
 If you need to transfer files to and from CCR, there are two options.
 
-1. Small Files: Use 
+1. Small Files: Use [OnDemand Portal](https://github.com/puru-soni-04/ESC-Group-CCR-Handbook?tab=readme-ov-file#ondemand-portal). Similar to Google Drive upload/download.
+    ![OnDeamndFilesPage](images/OnDemand%20Files%20Page.png)
+2. Large Files/Datasets: Use *Globus*. [Detailed guide](https://docs.ccr.buffalo.edu/en/latest/hpc/data-transfer/#globus-transfers).
+
 
