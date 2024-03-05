@@ -62,6 +62,8 @@ For a brief overview for CCR you may watch https://www.youtube.com/watch?v=ryBqd
     1. **Batch Jobs**: Write a *Slurm* script file detailing the hardware configuration, software modules to load, and how and what programs to run. It it fully automated and you don't have direct ssh access to the compute nodes. Once the job is running you can't change anything. [Details Here](Batch-Jobs.md)
     2. **Interactive Jobs**: Request a specific hardware and then access it directly from terminal. Useful for faster iteration, and when you are not sure what the specific steps are. [Details Here](Interactive-Jobs.md)
 
+## Software
+CCR uses EasyBuild to provide access to High Performant Scientific Software (eg. Python, Tensorflow, Numpy). [Details here](Software.md).
 
 ## OnDemand Portal
 "Open OnDemand is a browser based single point of access for all of CCR's clusters, shared storage, and remote visualization servers. OnDemand provides a graphical interface to view, edit, download, and upload files, manage and create job templates for CCR's clusters, and access interactive applications such as remote desktops to cluster nodes and the visualization servers, as well as GUI-based software like Matlab, Jupyter Lab/Notebook, and vscode. All of this is done through the browser on almost any device, requires no additional software to be installed, and with minimal knowledge of Linux and job scheduler commands." (CCR website, 2024)

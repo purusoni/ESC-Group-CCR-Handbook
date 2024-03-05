@@ -28,10 +28,10 @@ $--ondemand
 - a100
 
 
--- file transfer
-- large files: Globus
-- small files: ondemand
--- path structure: /projects/...
+$-- file transfer
+$- large files: Globus
+$- small files: ondemand
+$-- path structure: /projects/...
 
 
 $-- storage
