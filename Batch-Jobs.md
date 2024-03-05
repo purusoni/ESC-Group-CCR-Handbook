@@ -37,4 +37,7 @@ module load numba/0.54.1
 python multimodal_wandb_grid_search_sweep.py
 ```
 
+List of available nodes can be found by running `snodes` in the terminal.
+
+TODO (for now please see this: https://docs.ccr.buffalo.edu/en/latest/hpc/jobs/)
 
