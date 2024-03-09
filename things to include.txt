@@ -11,18 +11,18 @@ $- types of jobs
 
 $--ondemand
 
--- snodes
--- squeue -u <username>
--- scancel <jobid>
--- scancel -u <username> 
+$-- snodes
+$-- squeue -u <username>
+$-- scancel <jobid>
+$-- scancel -u <username> 
 
 
-- slurm guide
--- batch jobs
---- args
--- interative jobs
---- args
---- srun
+$- slurm guide
+$-- batch jobs
+$--- args
+$-- interative jobs
+$--- args
+$--- srun
 
 -- scavanger partition
 - a100
