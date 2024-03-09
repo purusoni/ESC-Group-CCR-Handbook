@@ -52,7 +52,7 @@ For a brief overview for CCR you may watch https://www.youtube.com/watch?v=ryBqd
 
     > **Note**: `-o "ServerAliveInterval 60"` flag is optional, but recommended, and meant to stop the ssh connection from timing out.
 
-    > **IMPORTANT**: Do NOT run heavy computation on the login/frontend nodes. They are meant for editing scripts, moving files, small data transfers, submitting jobs.
+    > **IMPORTANT**: Do NOT run heavy computation on the login/frontend nodes. They are meant for editing scripts, moving files, small data transfers, and submitting jobs.
 
     After ssh-ing into CCR login nodes, the terminal should look something like this: ![Terminal SSH Screenshot](images/Terminal%20SSH%20Screenshot.png)
 
@@ -90,7 +90,7 @@ For a brief overview for CCR you may watch https://www.youtube.com/watch?v=ryBqd
     To cancel all jobs for a user, run `scancel -u <username>`.
 
 ## Software
-CCR uses EasyBuild to provide access to High Performant Scientific Software (eg. Python, Tensorflow, Numpy). [Details here](Software.md).
+CCR uses EasyBuild to provide access to High Performant Scientific Software (eg. Python, Tensorflow, PyTorch, Numpy). [Details here](https://docs.ccr.buffalo.edu/en/latest/software/modules/).
 
 ## OnDemand Portal
 > **Note**: I  would not recommend starting any sort of Job or requesting resources using OnDemand as I've ran into multiple issues and using the command line is much easier.
