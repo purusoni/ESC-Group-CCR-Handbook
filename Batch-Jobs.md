@@ -47,7 +47,8 @@ Explanation
 
 6. `#SBATCH --output="/output_files/slurm-multimodal_wandb_grid_search_sweep-%j.out"`: I would reccomned including `%j` in the name for the output files so all you jobs, even the ones that use the same script, can have different output file. This makes it easier to debug. Slurm fills in `%j` with the actual JobID.
 > Steps 7-8 are self explanatory.
-9. `#SBATCH --gres=gpu:a100-pcie-40gb:1`: This is one of the ways to request a GPU though Slurm. Here I requested an single A100 with 40 GB of VRAM. Some other common GPU options for CCR are:
+9. `#SBATCH --gres=gpu:a100-pcie-40gb:1`: This is one of the ways to request a GPU though Slurm. Here I requested an single A100 with 40 GB of VRAM. 
+    ### Some other common GPU options for CCR are:
     - `gpu:a100-pcie-40gb:2`: Request two A100 attached to the same node. A node in CCR has a maximum of two GPUs. For more that 2 GPUs, you would have to request multiple nodes (line 3).
     - `gpu:tesla_v100-pcie-32gb:1 (or 2)`: One (or Two) NVIDIA V100 with 32GB VRAM.
     - `gpu:tesla_v100-pcie-16gb:1 (or 2)`: One (or Two) NVIDIA V100 with 16GB VRAM.

@@ -1,4 +1,4 @@
-# ESC Group CCR Handbook (In Progress)
+# ESC Group CCR Handbook
 *Adopted from https://docs.ccr.buffalo.edu/en/latest/*
 
 *When using the guide, if you think some information should be added, please let me, Puru Soni, know on slack. If you prefer to directly contribute to the handbook please start a pull request*
@@ -28,7 +28,7 @@ HPC has several partitions, each of which offer certain kinds of nodes (actual h
 
 - **scavenger**: Scavenge idle GPUs; your job would be cancelled as soon as the GPU owner starts his or her job; quick access to powerful GPUs if your job can be regularly checkpointed (I use this with Weights & Biases Logging). scavenger partition contains compute nodes on which we'll run our jobs (programs).
 
-[More Details on Currently Available Hardware](Nodes.md)
+[More Details on Currently Available Hardware](Batch-Jobs.md#some-other-common-gpu-options-for-ccr-are)
 
 ### Project Storage
 
@@ -75,7 +75,7 @@ For a brief overview for CCR you may watch https://www.youtube.com/watch?v=ryBqd
 
     For Example, `snodes | grep A100` can be used to see only the nodes with A100 GPUs, and `snodes | grep general-compute` can be used to filter down to only the nodes in general compute.
 
-    [See Curated Information about Relevant GPU Nodes](Nodes.md)
+    [See Curated Information about Relevant GPU Nodes](Batch-Jobs.md#some-other-common-gpu-options-for-ccr-are)
 
     ### See Job Queue
 
