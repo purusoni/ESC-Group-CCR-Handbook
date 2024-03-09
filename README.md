@@ -12,6 +12,8 @@ In this handbook, I will provide an overview of the resources in CCR and how to 
 
 > ***TLDR**: CCR is a high-performance research computing center at the University at Buffalo. We will use the computing nodes CCR offers to run our programs, and the project storage to store data and collaborate on projects.*
 
+> **Note**: Join the [UB CCR Slack](https://join.slack.com/t/ubccr-help/shared_invite/zt-2dzghw2yb-owfm7e_urSIOPyEcFFiUsw) for faster and professional help!
+
 ## What resources does CCR offer?
  
 CCR offers a variety of resources, but only HPC Clusters and Project Storage are important to us. *(Rest can be found at https://docs.ccr.buffalo.edu/en/latest/available-resources/)*
@@ -116,4 +118,9 @@ If you need to transfer files to and from CCR, there are two options.
     ![OnDeamndFilesPage](images/OnDemand%20Files%20Page.png)
 2. Large Files/Datasets: Use *Globus*. [Detailed guide](https://docs.ccr.buffalo.edu/en/latest/hpc/data-transfer/#globus-transfers).
 
+
+## FAQs
+[See FAQs](FAQs.md).
+
+If you don't find what you're looking for, please start a [GitHub Issue](https://github.com/puru-soni-04/ESC-Group-CCR-Handbook/issues/new).
 
