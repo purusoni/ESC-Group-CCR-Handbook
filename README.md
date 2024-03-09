@@ -50,7 +50,7 @@ For a brief overview for CCR you may watch https://www.youtube.com/watch?v=ryBqd
     ssh <username>@vortex.ccr.buffalo.edu -o "ServerAliveInterval 60"
     ```
 
-    `-o "ServerAliveInterval 60"` flag is optional, but recommended, and meant to stop the ssh connection from timing out.
+    > **Note**: `-o "ServerAliveInterval 60"` flag is optional, but recommended, and meant to stop the ssh connection from timing out.
 
     > **IMPORTANT**: Do NOT run heavy computation on the login/frontend nodes. They are meant for editing scripts, moving files, small data transfers, submitting jobs.
 
