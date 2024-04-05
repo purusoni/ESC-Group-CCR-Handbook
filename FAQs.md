@@ -5,6 +5,15 @@
 
 ---
 
+## I installed Weights & Biases on CCR but it's not working. What should I do?
+There is known issue with Weights & Biases on CCR. Please install the following version of wandb and protobuf:
+```bash
+pip install wandb==0.13.3
+pip install protobuf==3.19.6
+```
+
+If you still face the bug, please start a [GitHub Issue](https://github.com/puru-soni-04/ESC-Group-CCR-Handbook/issues/new)
+
 ## Can I Visual Studio Code on CCR Compute Nodes?
 Yes, but only when VSCode is launched through the [OnDemand Portal](README.md#ondemand-portal). CCR does not support custom VSCode server.
 

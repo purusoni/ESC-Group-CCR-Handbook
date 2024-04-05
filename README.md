@@ -92,6 +92,9 @@ For a brief overview for CCR you may watch https://www.youtube.com/watch?v=ryBqd
     To cancel all jobs for a user, run `scancel -u <username>`.
 
 ## Software
+
+> **Note**: Currently, there is a known issue with Weights & Biases package on CCR (when installed with pip). See FAQs for information on how to fix it.
+
 CCR uses EasyBuild to provide access to High Performant Scientific Software (eg. Python, Tensorflow, PyTorch, Numpy). [Details here](https://docs.ccr.buffalo.edu/en/latest/software/modules/).
 
 ## OnDemand Portal
